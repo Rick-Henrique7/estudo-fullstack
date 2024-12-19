@@ -9,52 +9,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playwrite+MX+Guides&display=swap');
+        body {
+            font-family: "Open Sans", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
         ul {
-            list-style-type: lower-roman;
+            list-style-type: disc;
+        }
+        h1 {
+            font-size: 15pt;
         }
         .custom-font {
             font-family: "Playfair Display", serif;
             font-weight: 400;
         }
-        .playwrite-mx-guides-regular {
-        font-family: "Playwrite MX Guides", serif;
-        font-weight: 400;
-        font-style: normal;
-}
-
+        table {
+            border-spacing: 15px;
+        }
+        img {
+            height: 200px;
+            width: 300px;
+        }
+        .section-title {
+            font-size: 15pt;
+            font-weight: bold;
+        }
+        .subtext {
+            font-size: 13pt;
+            font-weight: bold;
+        }
     </style>
 </head>
-<!-- aqui esta o link deste site: https://rick-henrique7.github.io/estudo-fullstack/ -->
 <body>
-    <table cellspacing="15"> <!-- pode servir para definir o espaçamento dentro das celulas da tabela-->
+    <table>
         <tbody>
             <tr>
                 <td>
-                    <img height="200pt" width="200pt" src="C:\Users\henri\OneDrive\Pictures\Img_Henrique\Saved Pictures\programacao-scaled.jpg" alt="foto de um computador sendo programado">
+                    <img src="style/imagens/programando.jpeg" alt="Programando">
                 </td>
                 <td>
-                    <h1 style="font-size: 15pt;" class="custom-font">HENRIQUE MORAES DOS SANTOS</h1>
+                    <h1 class="custom-font">HENRIQUE MORAES DOS SANTOS</h1>
                     <br>Rumo ao futuro com inovação
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="playwrite-mx-guides-regular">Estudante de Engenharia de Software</p>
-    <p class="playwrite-mx-guides-regular">Estudante de programação há 1 ano</p>
+    <p>Estudante de Engenharia de Software</p>
+    <p>Estudante de programação há 1 ano</p>
     <hr>
-    <strong class="playwrite-mx-guides-regular" style="font-size: 15pt;"> <p> Cursos </p></strong>
-    <ul class="playwrite-mx-guides-regular">
+    <p class="section-title">Cursos</p>
+    <ul>
         <li>Curso de JS</li>
         <li>Curso de Python</li>
     </ul>
-    <p class="playwrite-mx-guides-regular" style="font-size: 13pt;"><strong>O que gosto de fazer</strong></p>
-    <ol class="playwrite-mx-guides-regular">
+    <p class="subtext">O que gosto de fazer</p>
+    <ol>
         <li>Gosto de estudar</li>
         <li>Aprender coisas novas</li>
         <li>Jogar videogame</li>
     </ol>
-    <table class="playwrite-mx-guides-regular">
+    <table>
         <thead>
             <tr>
                 <th><strong>Minhas habilidades</strong></th>
@@ -76,7 +92,7 @@
         </tbody>
     </table>
     <hr>
-    <h1  style="height:40pt" >entre em contato</h1>
-    <a href="C:\Users\henri\OneDrive\Desktop\full-stack-turbo\contato.html">site para entrar em contato</a>
+    <h1>Entre em contato</h1>
+    <a href="C:\Users\henri\OneDrive\Desktop\full-stack-turbo\contato.html">Site para entrar em contato</a>
 </body>
 </html>

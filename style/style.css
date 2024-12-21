@@ -1,3 +1,5 @@
+/*==========================SECAO DE TAGS========================== */
+
 body {
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
@@ -12,10 +14,14 @@ ul {
 h1 {
     font-size: 15pt;
 }
-.custom-font {
-    font-family: "Playfair Display", serif;
-    font-weight: 400;
+hr {
+    width: 15%; /* aqui definimos uma janela de exibição responsiva de 15%*/
+    border-style: none; /* aqui definimos que os atributos das bordas são nulos*/
+    border-top: dotted; /*aqui a parte superior adota o stylo dotted */ 
+    color: rgb(171, 68, 89);/* recebe uma cor vermelha */
+    border-width: 15px;/*a borda tem um tamanho de 15px */
 }
+
 table {
     border-spacing: 15px;
 }
@@ -23,6 +29,8 @@ img {
     height: 200px;
     width: 300px;
 }
+/*==========================SECAO DE CLASSES========================== */
+
 .section-title {
     font-size: 15pt;
     font-weight: bold;
@@ -31,10 +39,7 @@ img {
     font-size: 13pt;
     font-weight: bold;
 }
-hr {
-    width: 15%; /* aqui definimos uma janela de exibição responsiva de 15%*/
-    border-style: none; /* aqui definimos que os atributos das bordas são nulos*/
-    border-top: dotted; /*aqui a parte superior adota o stylo dotted */ 
-    color: rgb(171, 68, 89);/* recebe uma cor vermelha */
-    border-width: 15px;/*a borda tem um tamanho de 15px */
+.custom-font {
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
 }

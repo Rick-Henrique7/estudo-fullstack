@@ -43,3 +43,10 @@ img {
     font-family: "Playfair Display", serif;
     font-weight: 400;
 }
+/*==========================SECAO DE IDs========================== */
+#cabecalho {
+    color: chartreuse;
+}
+#cabecalho:hover{
+    color: white;
+}

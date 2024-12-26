@@ -1,52 +1,71 @@
 /*==========================SECAO DE TAGS========================== */
 
 body {
+    text-align: center;
+    margin: 0 auto 0 auto;
+    width: 60%;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-color: rgb(27, 24, 51);
-    color: rgb(242, 159, 88)
+    background-image: linear-gradient(rgb(0, 26, 110), rgb(7, 71, 153),rgb(0, 153, 144),rgb(225, 255, 187));
+    
+}
+ol{
+    margin: 0 auto 0 auto;
+    width: 20%;
+    margin-bottom: 10px;
 }
 ul {
     list-style-type: disc;
+    margin: 0 auto 0 auto;
+    width: 20%;
 }
 h1 {
     font-size: 15pt;
+    color: rgb(234, 216, 177);
 }
 hr {
-    width: 15%; /* aqui definimos uma janela de exibição responsiva de 15%*/
-    border-style: none; /* aqui definimos que os atributos das bordas são nulos*/
-    border-top: dotted; /*aqui a parte superior adota o stylo dotted */ 
-    color: rgb(171, 68, 89);/* recebe uma cor vermelha */
-    border-width: 15px;/*a borda tem um tamanho de 15px */
+    width: 35%; 
+    border: none;
+    border-top: 15px dotted rgb(255, 105, 180);
+    padding-bottom: 50px; /* Aumenta o espaço interno na parte inferior */
 }
+
 
 table {
     border-spacing: 15px;
+    margin: 0 auto 0 auto;
+    width: 50%;
+    
 }
+
 img {
     height: 200px;
     width: 300px;
 }
+footer{
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+
+
+
+
 /*==========================SECAO DE CLASSES========================== */
 
-.section-title {
-    font-size: 15pt;
-    font-weight: bold;
-}
-.subtext {
-    font-size: 13pt;
-    font-weight: bold;
-}
-.custom-font {
+.text{
+    color: rgb(255, 215, 0);
     font-family: "Playfair Display", serif;
     font-weight: 400;
+    font-size: 20pt;
 }
+
 /*==========================SECAO DE IDs========================== */
-#cabecalho {
-    color: chartreuse;
-}
 #cabecalho:hover{
     color: white;
+}
+#nv{
+    color: rgb(255, 215, 0);
 }

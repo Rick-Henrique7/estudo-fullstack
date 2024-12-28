@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 /*==========================SECAO DE TAGS========================== */
 
 body {
     text-align: center;
     margin: 0 auto 0 auto;
-    width: 60%;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -13,20 +13,20 @@ body {
 }
 ol{
     margin: 0 auto 0 auto;
-    width: 20%;
+    width: 15%;
     margin-bottom: 10px;
 }
 ul {
     list-style-type: disc;
     margin: 0 auto 0 auto;
-    width: 20%;
+    width: 15%;
 }
 h1 {
     font-size: 15pt;
     color: rgb(234, 216, 177);
 }
 hr {
-    width: 35%; 
+    width: 30%; 
     border: none;
     border-top: 15px dotted rgb(255, 105, 180);
     padding-bottom: 50px; /* Aumenta o espaço interno na parte inferior */
@@ -36,19 +36,23 @@ hr {
 table {
     border-spacing: 15px;
     margin: 0 auto 0 auto;
-    width: 50%;
+    width: 30%;
     
 }
 
 img {
     height: 200px;
     width: 300px;
+    position:relative;
+    right: 2%;
 }
 footer{
     color: white;
     font-family: "Playfair Display", serif;
 }
-
+header{
+    width: 100%;
+}
 
 
 
@@ -62,10 +66,27 @@ footer{
     font-size: 20pt;
 }
 
+  
+  
+
 /*==========================SECAO DE IDs========================== */
-#cabecalho:hover{
-    color: white;
-}
 #nv{
     color: rgb(255, 215, 0);
+}
+#bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50pt;
+  }
+#cabecalho{
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20pt;
+}
+#inicio{
+    background-color: black;
+    padding-top: 2%;
+    padding-bottom: 4%;
 }

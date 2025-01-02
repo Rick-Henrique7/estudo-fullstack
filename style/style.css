@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@1..1000&display=swap');
+
 /*==========================SECAO DE TAGS========================== */
+html, body {
+    height: 100%; /* Garante que o conteúdo ocupe toda a altura da página */
+    margin: 0; /* Remove margens padrão */
+}
 
 body {
     text-align: center;
-    margin: 0 auto 0 auto;
     font-family: "Open Sans", serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    background-image: linear-gradient(rgb(0, 26, 110), rgb(7, 71, 153),rgb(0, 153, 144),rgb(225, 255, 187));
-    
+    font-size: 1.25rem; 
+    background-color: white;    
 }
 ol{
     margin: 0 auto 0 auto;
@@ -22,14 +27,15 @@ ul {
     width: 15%;
 }
 h1 {
-    font-size: 15pt;
+    font-size: 1.25rem;
     color: rgb(234, 216, 177);
 }
 hr {
     width: 30%; 
     border: none;
-    border-top: 15px dotted rgb(255, 105, 180);
-    padding-bottom: 50px; /* Aumenta o espaço interno na parte inferior */
+    border-top: 15px dotted rgb(169, 29, 58);
+    padding-bottom: 20px; /* Aumenta o espaço interno na parte inferior */
+    margin-top: 15px;
 }
 
 
@@ -60,12 +66,16 @@ header{
 /*==========================SECAO DE CLASSES========================== */
 
 .text{
-    color: rgb(255, 215, 0);
-    font-family: "Playfair Display", serif;
+    color: #11999e;
+    font-family: "Ysabeau SC", serif;
+    font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 20pt;
+    font-size: 1.666rem;
 }
-
+.conteudo{
+    position: relative;
+    padding-bottom: 10px;
+}
   
   
 
@@ -77,16 +87,57 @@ header{
     font-family: "Bebas Neue", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 50pt;
+    font-size: 4.166rem;
   }
 #cabecalho{
     font-family: "Bebas Neue", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20pt;
+    font-size: 1.666rem;
 }
 #inicio{
     background-color: black;
     padding-top: 2%;
     padding-bottom: 4%;
+}
+/*========================== EFEITO DE ESTRELAS NO FUNDO ==========================*/
+
+#background-container {
+    position: absolute; /* Altera para absolute para não interferir no fluxo do layout */
+    top: 0;
+    left: 0;
+    width: 10w30%;
+    height: 100%;
+    z-index: -1; /* Fica atrás de todo o conteúdo */
+    background: black;
+    overflow: hidden; /* Impede que o conteúdo "extra" transborde */
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    border-radius: 50%;
+    animation: twinkle 3s infinite ease-in-out, ascend 5s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes ascend {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100vh);
+    }
 }

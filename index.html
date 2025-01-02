@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="style/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body id="background-container">
     <header>
         <div id="inicio">
         <h1 id="bebas-neue-regular">HENRIQUE MORAES DOS SANTOS</h1>
@@ -21,20 +21,25 @@
     </header>
     <main>
         <p class="text">Estudante de programação há 1 ano</p>
-
         <hr>
-        <p class="text">Cursos</p>
-        <ul class="text">
-            <li>Curso de JS</li>
-            <li>Curso de Python</li>
-        </ul>
-        <p class="text">O que gosto de fazer</p>
+        <div id="conteudo">
+            <p class="text"><strong>Cursos</strong></p>
+                <ul class="text">
+                    <li>Curso de JS</li>
+                    <li>Curso de Python</li>
+                </ul>
+        </div>
+        <div class="conteudo">
+        <p class="text"><strong>O que gosto de fazer</strong></p>
         <ol class="text">
             <li>Gosto de estudar</li>
             <li>Aprender coisas novas</li>
             <li>Jogar videogame</li>
         </ol>
-        <h2 class="text">Minhas habilidades</h2>
+        </div>
+        <hr>
+        <div class="conteudo">
+        <h2 class="text"><strong>Minhas habilidades</strong></h2>
         <table class="text">
             <tbody>
                 <tr>
@@ -52,10 +57,12 @@
             </tbody>
         </table>
         <hr>
+        </div>
     </main>
     <footer >
         <h1 id="nv" >Entre em contato</h1>
         <a href="contato.html" class="footer">CLIQUE AQUI PARA ENTRAR EM CONTATO</a>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

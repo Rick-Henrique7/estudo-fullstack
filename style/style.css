@@ -106,7 +106,7 @@ header{
     position: absolute; /* Altera para absolute para não interferir no fluxo do layout */
     top: 0;
     left: 0;
-    width: 100;
+    width: 100%;
     height: 100%;
     z-index: -1; /* Fica atrás de todo o conteúdo */
     background: black;
